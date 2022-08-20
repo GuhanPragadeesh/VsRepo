@@ -1,0 +1,9 @@
+<apex:page >
+    <script>
+    ({
+doHandleClick : function(component, event, helper) {
+helper.onHandleClick(component, event, helper);
+}
+})
+    </script>
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page controller="Testtoken">
+       <script>
+ const Http = new XMLHttpRequest();
+const url='https://jsonplaceholder.typicode.com/posts';
+Http.open("GET", url);
+Http.send();
+    
+    </script>
+</apex:page>

@@ -1,0 +1,15 @@
+<apex:page standardController="Department__c" extensions="DepartmentApexVf">
+    <apex:form >
+    Hello EveryOne  
+    <apex:sectionHeader title="{!display}" subtitle="Department"/>
+     <apex:commandLink action="{!click}" value="Click" id="theCommandLink"/>
+     <apex:page id="thePage">
+    <apex:tabPanel switchType="client" selectedTab="name2" id="theTabPanel">
+    <apex:tab label="List1" name="name1" id="tabOne">To be Displayed Soon</apex:tab>
+    <apex:tab label="List2" name="name2" id="tabTwo">To be Displayed</apex:tab>
+    </apex:tabPanel>
+</apex:page>
+    </apex:form>
+   
+   
+</apex:page>

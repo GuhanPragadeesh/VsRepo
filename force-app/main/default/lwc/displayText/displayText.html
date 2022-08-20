@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Simple Text" icon-name="custom:custom33">
+        <div class="slds-m-around_medium">
+          <slot>  </slot>
+          <p>Hello Test! {passtring} </p>
+         
+          <p>Name <slot name="name"> Name </slot></p>
+          <p>Phone<slot name="phone"> This is number </slot></p>
+          <p>Description: <slot>Default description</slot></p>
+          <p>{details}</p>
+        </div>
+        <lightning-button name="button" label="button" onclick={handleclick}></lightning-button>
+      </lightning-card>
+</template> 

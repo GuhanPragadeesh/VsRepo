@@ -1,0 +1,13 @@
+<apex:page standardController="Survey__c" extensions="MyExtension">
+    <apex:form >
+        <h1> Survey  </h1> <br/> <br/>
+        <h> Survey name  </h> <br/>
+        <apex:inputField value="{!Survey__c.Name}"/> <br/>
+        <h> No of question  </h>
+        <apex:inputField value="{!Survey__c.No_of_Questions__c}"/> <br/>    
+    <apex:commandButton value="Save" action="{!Save}" rerender="reference"/>
+        <apex:outputPanel id="reference">
+        </apex:outputPanel>
+    
+    </apex:form>
+ </apex:page>

@@ -1,0 +1,5 @@
+<apex:page standardController="Department__c" >
+  <br> </br>
+  Hello Everyone!
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

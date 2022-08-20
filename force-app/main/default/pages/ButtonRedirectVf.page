@@ -1,0 +1,25 @@
+<apex:page controller="ButtonRedirectApex" > 
+    <apex:form >
+   <apex:pageBlock >
+       <apex:pageBlockSection >
+            <apex:inputText value="{!str}" id="textinput"/>
+              <apex:commandLink action="{!redirectpage}" value="Click here to get the data" id="theCommandLink"/>
+       </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+     <apex:dataTable value="{!acclist}" var="account" id="theTable" rowClasses="odd,even" styleClass="tableClass">
+            <apex:facet name="caption">List of Accounts</apex:facet>
+            <apex:facet name="header">Accounts</apex:facet>
+            <apex:column >
+                <apex:facet name="header">Name</apex:facet>
+                <apex:outputText value="{!account.name}"/>
+            </apex:column>
+            <apex:column >
+                <apex:facet name="header">Phone</apex:facet>
+                <apex:outputText value="{!account.Phone}"/>
+            </apex:column>
+            
+        </apex:dataTable>
+   
+    </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+    <aura:attribute name="Text" type="String"/>
+   <aura:attribute name="num" type="Integer"/>
+    <aura:registerEvent name="sampleComponentEvent" type="c:SampleEvent"/>
+    <lightning:input name="newtext" value="{!v.Text}" label="Enter Text"/>
+    <lightning:input name="newnum" value="{!v.num}" label="Enter Number"/>
+       <lightning:button  label="Get Event" title="To get event param" onclick="{!c.getevent}"/>
+       
+</aura:component>

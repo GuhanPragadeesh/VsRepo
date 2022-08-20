@@ -1,0 +1,14 @@
+<apex:page controller="Testtoken">
+    <script>
+    function message(){
+    dotprefix.Testtoken.getres(arrayIds,function(result,event){
+        if(event.status){  
+          console.log('check your result: '+result);
+        }
+        else{
+           console.log('Error');
+        }
+    });
+}
+    </script>
+</apex:page>

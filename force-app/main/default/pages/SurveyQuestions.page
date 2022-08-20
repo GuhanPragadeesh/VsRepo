@@ -1,0 +1,18 @@
+<apex:page Controller="NewController">
+     <apex:form >
+         <h1> Survey Question </h1> <br/> <br/>
+         <h> Survey Question Name</h> <br/>
+         <apex:outputPanel id="reference">
+         </apex:outputPanel>
+         <apex:inputField value="{!que.Name}"/> <br/>
+          <h>Feedback </h> <br/>
+        <apex:inputField value="{!que.Feedback__c}"/> <br/> 
+         <h> Is the Product is Good</h> <br/>
+          <apex:inputField value="{!que.Is_the_product_is_good__c}"/> <br/>
+         <h> Rate The Services </h> <br/>
+        <apex:inputField value="{!que.Rate_the_services__c}"/> <br/> 
+         <h>Quantity_Review__c </h> <br/>
+          <apex:inputField value="{!que.Quantity_Review__c}"/> <br/> 
+    <apex:commandButton value="Save" action="{!Save}" rerender="reference"/>
+     </apex:form>
+</apex:page>

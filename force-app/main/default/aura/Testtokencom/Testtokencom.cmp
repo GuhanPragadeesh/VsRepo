@@ -1,0 +1,13 @@
+<aura:component controller="Testtokenlight">  
+      <aura:attribute name="response" type="Map"/>
+     
+    <div class="slds_header">
+        <div class="slds_page" role="banner">
+            <div class="slds_body">
+                <p class="slds_display" title="Check">Output</p>
+                <lightning:button variant="brand" label="Test API" onclick="{!c.callout }" />             
+            </div>
+        </div>
+        
+    </div>
+</aura:component>

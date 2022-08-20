@@ -1,0 +1,10 @@
+<apex:page controller="SearchApexObject" action="{!Click}">
+    <apex:form >
+   <apex:pageBlock >
+       <apex:pageBlockSection >
+           <apex:commandLink action="{!Click}" value="Click Here"/>
+           
+       </apex:pageBlockSection>
+    </apex:pageBlock>
+        </apex:form>
+</apex:page>

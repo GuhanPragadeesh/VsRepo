@@ -1,0 +1,5 @@
+<aura:tokens>
+    <aura:token name="testtoken" value="yellow"/>
+    <aura:token name="colorBackground11111" value="rgb(244, 246, 249)" />
+  <aura:token name="fontFamily" value="'Salesforce Sans', Arial, sans-serif" />
+</aura:tokens>

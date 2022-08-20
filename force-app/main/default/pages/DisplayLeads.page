@@ -1,0 +1,10 @@
+<apex:page standardController="Lead" recordSetVar="leads">
+    <apex:pageBlock title="Lead list">
+        <apex:pageBlockTable value="{!leads}" var="led">
+            <apex:column value="{!led.id}"/>
+            <apex:column value="{!led.Company}"/>
+            <apex:column value="{!led.Industry}"/>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    
+</apex:page>

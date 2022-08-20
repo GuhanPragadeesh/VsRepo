@@ -1,0 +1,5 @@
+<aura:event type="COMPONENT" description="Event template">
+    <aura:attribute name="textevent" type="string"/>
+    <aura:attribute name="NumberEvent" type="Integer"/>
+    
+</aura:event>

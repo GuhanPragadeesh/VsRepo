@@ -1,0 +1,2 @@
+<apex:page controller="Callout" action="{!makeGetCallout}">
+</apex:page>

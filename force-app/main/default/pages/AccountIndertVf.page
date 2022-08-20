@@ -1,0 +1,50 @@
+<apex:page standardController="Account" extensions="AccountInsertVfApex" showHeader="false" applyHtmlTag="false"><!-- contentType="application/vnd.ms-excel"-->
+    <apex:form >
+        <apex:pageMessages />
+        <c:SampleComponent />
+        <apex:pageBlock title="Add an Account here">
+            <apex:pageBlockSection columns="1">
+                <apex:outputText value="User Local Time Zone time: {! NOW() }" />
+                <apex:inputField value="{!Account.Name}"/>
+                <apex:inputField value="{!Account.Phone}"/>
+                <apex:inputField value="{!Account.ParentId}"/>
+                <apex:inputField value="{!Account.AccountNumber}"/>
+                <apex:inputField value="{!Account.Site}"/> 
+                <apex:inputField value="{!Account.Type}"/>
+                <apex:inputField value="{!Account.Industry}"/>
+                <apex:inputField value="{!Account.AnnualRevenue}"/>
+                <apex:inputField value="{!Account.Website}"/>
+                <apex:inputField value="{!Account.SLA__c}"/> 
+                <!--<apex:panelGrid columns="1" style="float:;"> -->
+                    
+                 <apex:outputText value=" {0,date,M/d/yyy h:mm a}">  
+        <apex:param value="{!Account.LastModifiedDate}"/>  
+    </apex:outputText>  
+            </apex:pageBlockSection>
+            
+            <apex:pageblockButtons >
+                <apex:commandButton action="{!save}" value="Save"/>
+                <apex:commandButton action="{!cancel}" value="Cancel"/> 
+              <!--  <apex:inputText value="{!str}" id="textinput"/>
+                 <apex:commandLink action="{!save}" value="Click to see the Data" id="theCommandLink"/> -->
+                <apex:commandLink action="{!save1}" value="Click to see the Data" id="theCommandLink"/>
+            </apex:pageblockButtons>
+        </apex:pageBlock>
+        <apex:dataTable value="{!acclist}" var="account" id="theTable" rowClasses="odd,even" styleClass="tableClass">
+            <apex:facet name="caption">List of Accounts</apex:facet>
+            <apex:facet name="header">Accounts</apex:facet>
+            
+            <apex:column >  
+                <apex:facet name="header">Name</apex:facet>
+                <apex:outputText value="{!account.name}"/>
+            </apex:column>
+            
+            <apex:column >
+                <apex:facet name="header">Phone</apex:facet>
+                <apex:outputText value="{!account.Phone}"/>
+            </apex:column>
+            
+        </apex:dataTable>
+        <apex:iframe src="https://developer.salesforce.com/" scrolling="true" id="theIframe"/>
+    </apex:form>    
+</apex:page>
