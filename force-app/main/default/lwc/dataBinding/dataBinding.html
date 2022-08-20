@@ -1,0 +1,45 @@
+<template>
+    <lightning-card title="Data Binding">
+<div class="slds-box">
+    <lightning-avatar src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg">   </lightning-avatar>
+        <h1>Hello all {name1}</h1>
+        <h2>{details.age}</h2>
+        <h2>{Namelist}</h2>
+        <div class="mystyle">
+            <h2> City {details.Address.city}</h2>
+        </div>
+        <h3> Note {list}</h3>
+        <lightning-input value={name1} label="Enter your name" onchange={handlename} ></lightning-input>
+        </div>
+        <lightning-button variant="brand" label="First" onclick={handleclick} name="button1"> </lightning-button>
+        <lightning-button label="second" onclick={handleclick} name="button2"> </lightning-button>
+        <template if:true={show}>
+            Not Changed
+        </template>
+        <template if:false={show}> 
+            Changed
+        </template>
+        <!--  iterator   -->
+    
+        
+</lightning-card>
+<!-- slds , design tokens -->
+<lightning-card title="slds">
+    <div class="slds-grid slds-gutters">
+
+        <div class="slds-col slds-small-size_1-of-1 slds-medium-size_6-of-12">
+            Changed  dataBinding  LightningComponentBundle  force-app\main\default\lwc\dataBinding\dataBinding.css        
+            Changed  dataBinding  LightningComponentBundle  force-app\main\default\lwc\dataBinding\dataBinding.html       
+            Changed  dataBinding  LightningComponentBundle  force-app\main\default\lwc\dataBinding\dataBinding.js         
+            Changed  dataBinding  LightningComponentBundle  force-app\main\default\lwc\dataBinding\second.js              
+        </div>
+        <div class="slds-col slds-small-size_1-of-1 slds-medium-size_6-of-12">
+            Changed  dataBinding  LightningComponentBundle  force-app\main\default\lwc\dataBinding\dataBinding.css        
+            Changed  dataBinding  LightningComponentBundle  force-app\main\default\lwc\dataBinding\dataBinding.html       
+            Changed  dataBinding  LightningComponentBundle  force-app\main\default\lwc\dataBinding\dataBinding.js         
+            Changed  dataBinding  LightningComponentBundle  force-app\main\default\lwc\dataBinding\second.js              
+        </div>
+    </div>
+</lightning-card>
+    
+</template>   

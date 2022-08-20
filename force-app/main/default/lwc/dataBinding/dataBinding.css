@@ -1,0 +1,13 @@
+
+ @import 'c/testComponent' ;
+ 
+.mystyle{
+    background-color:darkgoldenrod;
+
+}
+/*:host{
+    
+--slds-c-card-color-background: rgba(130, 220, 154, 0.523);
+--slds-c-button-brand-color-background : red;
+
+} */

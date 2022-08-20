@@ -1,0 +1,35 @@
+<template>
+<lightning-card title="Today's Task">
+<div class="slds-box slds-box_small">
+<lightning-layout vertical-align="center" class="x-large">
+    <lightning-layout-item flexibility="auto" padding="around-small">
+<ul class="slds-has-inline-block-links_space">
+    <li class="slds-item">
+        <lightning-layout vertical-align="center">
+                Task # 
+    <lightning-button-icon icon-name="utility:delete"    alternative-text="Delete"   class="slds-m-left_xx-small" title="Delete"></lightning-button-icon>
+        </lightning-layout>    
+</li>
+    <li class="slds-item">
+        
+
+    <lightning-button-icon icon-name="utility:delete"    alternative-text="Delete"   class="slds-m-left_xx-small" title="Delete"></lightning-button-icon>
+    </li>
+    </ul>
+    </lightning-layout-item> 
+            </lightning-layout>
+<lightning-layout-item padding="horizantal-small">
+        <lightning-input type="text" label="Add a task" placeholder="type here..." onchange={updateTask} ></lightning-input> 
+</lightning-layout-item>
+<lightning-layout-item>
+    <lightning-button variant="Brand" label="Base" title="Looks like a link" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+</lightning-layout-item>
+</div>   
+
+</lightning-card>
+
+<lightning-layout-item>
+
+</lightning-layout-item>
+
+</template>
